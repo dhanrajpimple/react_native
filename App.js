@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, Button } from 'react-native';
+import { Text, View } from 'react-native';
 import Data from './components/Data';
 import User from './components/User';
 import Buttonlearn from './components/Buttonlearn';
@@ -8,7 +8,15 @@ import Propss from './components/Propss';
 import Textin from './components/Textin';
 import Form from './components/Form';
 import List from './components/List';
-
+import Arrayl from './components/Arrayl';
+import Grid from './components/Grid';
+import Section from './components/Section';
+import Usehooks from './components/Usehooks';
+import Life from './components/Life';
+import Button from './components/Buttonn';
+import Radiob from './components/Radiob';
+import Loader from './components/Loader';
+import Modall from './components/Modall';
  
 
 const App = ()=> {
@@ -33,7 +41,17 @@ const App = ()=> {
 
 {/* <Textin/> */}
 {/* <Form/> */}
- <List/>
+ {/* <List/> */}
+ {/* <Arrayl/> */}
+{/* <Grid/> */}
+ {/* <Section/>  */}
+{/* <Usehooks/> */}
+{/* <Life/> */}
+{/* <Button/> */}
+{/* <Radiob/>  */}
+   {/* <Loader/> */}
+  <Modall/>
+  
   </View>
   );
 };

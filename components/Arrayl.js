@@ -1,8 +1,8 @@
 import React from 'react'
-import { FlatList, View,Text } from 'react-native'
+import { Text, View, ScrollView } from 'react-native'
 
-const List = () => {
-  const user =  [
+const Arrayl = () => {
+ const user =  [
     {"id": 1, "name": "Alice"},
     {"id": 2, "name": "Bob"},
     {"id": 3, "name": "Charlie"},
@@ -104,18 +104,18 @@ const List = () => {
     {"id": 99, "name": "Ivy"},
     {"id": 100, "name": "Jack"}
   ]
+  
   return (
-   <View>
-    <Text>this is the flat list</Text>
-     
-     <FlatList
-     data={user}
-     renderItem={({item})=><Text>{item.name}</Text>}
-     keyExtractor={(item)=>item.id}
-     />
-
-   </View>
+    <View>
+    <Text>this is map </Text>
+    <ScrollView>
+    {
+      user.map((item)=><Text style={{backgroundColor:"red", color:"black", fontWeight:"bold",
+    height:"10px",  textAlign:"center"}}>{item.name}</Text>) 
+    }
+    </ScrollView>
+    </View>
   )
 }
 
-export default List
+export default Arrayl

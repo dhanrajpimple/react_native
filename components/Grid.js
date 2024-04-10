@@ -1,7 +1,7 @@
 import React from 'react'
-import { FlatList, View,Text } from 'react-native'
+import { ScrollView, Text, View } from 'react-native'
 
-const List = () => {
+const Grid = () => {
   const user =  [
     {"id": 1, "name": "Alice"},
     {"id": 2, "name": "Bob"},
@@ -105,17 +105,23 @@ const List = () => {
     {"id": 100, "name": "Jack"}
   ]
   return (
-   <View>
-    <Text>this is the flat list</Text>
-     
-     <FlatList
-     data={user}
-     renderItem={({item})=><Text>{item.name}</Text>}
-     keyExtractor={(item)=>item.id}
-     />
+<View>
+  <Text>this is the text</Text>
+  <ScrollView >
+    <View style={{ display:"flex",flexDirection: "row", flexWrap: 
+  "wrap" }}>
+    {
+      user.map((item, index) => (
+        <Text key={index} style={{ width: 100, height: 50, borderColor: "black", backgroundColor: "red", margin: 10 }}>
+          {item.name}
+        </Text>
+      ))
+    }
+    </View>
+  </ScrollView>
+</View>
 
-   </View>
   )
 }
 
-export default List
+export default Grid
