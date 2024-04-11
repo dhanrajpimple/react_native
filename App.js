@@ -17,6 +17,8 @@ import Button from './components/Buttonn';
 import Radiob from './components/Radiob';
 import Loader from './components/Loader';
 import Modall from './components/Modall';
+import Pressble from './components/Pressble';
+import Statusbarr from './components/Statusbarr';
  
 
 const App = ()=> {
@@ -50,8 +52,9 @@ const App = ()=> {
 {/* <Button/> */}
 {/* <Radiob/>  */}
    {/* <Loader/> */}
-  <Modall/>
-  
+  {/* <Modall/> */}
+  {/* <Pressble/> */}
+   <Statusbarr/>
   </View>
   );
 };
